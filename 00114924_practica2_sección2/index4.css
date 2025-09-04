@@ -1,0 +1,19 @@
+
+.container {
+  display: grid; 
+  grid-template-columns: 1fr 1fr minmax(10px, 1fr) 3fr repeat(5, 1fr) 50px auto 100px 1fr;
+  gap: 8px; /* para separar las columnas y filas */
+  /* e.g.
+  grid-template-rows:
+    min-content 1fr min-content
+    100px 1fr max-content
+  */
+}
+
+.container img {
+  width: 100%;           
+  height: auto;   
+  min-width: 100px;     
+  object-fit: cover;       
+  border: 2px solid #ff4b4b;
+}
